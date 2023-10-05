@@ -8,13 +8,13 @@ Crear una aplicación que sea capaz de recibir múltiples peticiones http simple
 
 Requisitos
 
-1- La aplicación estará escrita en PHP 8.2 con framework Symfony (Arquitectura Hexagonal)
-2- La aplicación deberá permitir alta concurrencia (frontales con idea de usar balanceadores)
-3- La aplicación deberá poder lanzarse mediante Docker de forma automática (docker-compose) 
-4- El broker de mensajes será preferiblemente RabbitMQ
-5- Podrá haber varios consumidores de mensajes que procesen la información
-6- La información de las visitas se guardará en una base de datos MySQL
-7- La prueba se subirá a un repositorio público tipo GitHub
+1- La aplicación estará escrita en PHP 8.2 con framework Symfony (Arquitectura Hexagonal)<br/>
+2- La aplicación deberá permitir alta concurrencia (frontales con idea de usar balanceadores)<br/>
+3- La aplicación deberá poder lanzarse mediante Docker de forma automática (docker-compose) <br/>
+4- El broker de mensajes será preferiblemente RabbitMQ<br/>
+5- Podrá haber varios consumidores de mensajes que procesen la información<br/>
+6- La información de las visitas se guardará en una base de datos MySQL<br/>
+7- La prueba se subirá a un repositorio público tipo GitHub<br/>
 
 El test será lanzar peticiones automatizadas (tipo ApacheBench) a los distintos frontales y luego levantar varios consumidores para que los datos finalmente queden guardados en base de datos.
 
